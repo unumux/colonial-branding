@@ -1,0 +1,20 @@
+{
+  "name": "Colonial Branding",
+  "version": "1.0.0",
+  "authors": [
+    "T. Brickhouse <tbrickhouse@unum.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "bootstrap-sass-official": "3.2.0"
+  },
+  
+  "main": "/scss/branding.scss"
+}
