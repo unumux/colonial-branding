@@ -13,8 +13,9 @@
     "tests"
   ],
   "dependencies": {
-      "bootstrap-sass-official": "3.2.0"
+    "bootstrap-sass-official": "3.2.0"
   },
-  
-  "main": "/scss/branding.scss"
+  "main": "scss/branding-cla.scss",
+  "homepage": "https://github.com/unumux/colonial-branding",
+  "private": true
 }
