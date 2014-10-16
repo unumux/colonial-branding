@@ -1,5 +1,5 @@
 {
-  "name": "Colonial Branding",
+  "name": "colonial-branding",
   "version": "1.0.0",
   "authors": [
     "T. Brickhouse <tbrickhouse@unum.com>"
@@ -12,7 +12,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "bootstrap-sass-official": "3.2.0"
   },
   "main": "scss/branding-cla.scss",
