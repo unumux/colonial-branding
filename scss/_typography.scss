@@ -1,20 +1,30 @@
 h1, .h1 {
-  color: $steel-blue;
+  color: $dark-red;
   font-family:$headings-font-family;
   font-weight:300;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+	font-family:$headings-font-family;
+	font-weight:300;
+}
+
+h2, h3, h4 {
+	color: $steel-blue;
+}
+
+h3, h4, h5, h6 {
   font-family: $headings-font-family-alt;
   font-weight:600;
 }
 
-h2 {
-	color: $dark-red;
+h5 {
+	color: $slate;
 }
 
-h3, h4, h5, h6 {
-	color: $charcoal;
+h6 {
+	color: $pewter;
+	text-transform: uppercase;
 }
 
 ul {
