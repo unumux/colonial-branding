@@ -20,3 +20,12 @@
 		color: $pumpkin;
 	}
 }
+
+.nav {
+  > li > a {
+    &:hover,
+    &:focus {
+      color: $steel-blue;
+    }
+  }
+}
