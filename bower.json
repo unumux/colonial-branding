@@ -13,7 +13,7 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass-official": "^3.3.1"
+    "bootstrap-sass-official": "^3.3.2"
   },
   "main": "scss/branding-cla.scss",
   "homepage": "https://github.com/unumux/colonial-branding",
