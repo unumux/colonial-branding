@@ -12,7 +12,7 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-sass-official": "^3.3.2"
   },
   "main": "scss/branding-cla.scss",
