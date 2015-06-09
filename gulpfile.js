@@ -14,7 +14,11 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
     return gulp.src('lib/bootstrap-sass-official/assets/javascripts/bootstrap.min.js')
                .pipe(gulp.dest('releases/'));
-})
+});
+
+gulp.task('test', function() {
+    console.log('placeholder for test');
+});
 
 
 gulp.task('build', ['sass', 'js']);
