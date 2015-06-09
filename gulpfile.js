@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
+var zip = require('gulp-zip');
 
 gulp.task('sass', function() {
     return gulp.src('*.scss')
@@ -16,9 +17,11 @@ gulp.task('js', function() {
                .pipe(gulp.dest('releases/'));
 });
 
-gulp.task('test', function() {
-    console.log('placeholder for test');
+gulp.task('zip', ['sass', 'js'], function() {
+    return gulp.src(['releases/**/*', '!release/**/*.zip'])
+               .pipe(zip('colonial-branding.zip'))
+               .pipe(gulp.dest('releases'));
 });
 
 
-gulp.task('build', ['sass', 'js']);
+gulp.task('build', ['zip']);

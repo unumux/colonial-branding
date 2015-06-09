@@ -15,6 +15,7 @@ deploy:
       - "releases/lite.css"
       - "releases/main.css"
       - "releases/bootstrap.min.js"
+      - "releases/colonial-branding.zip"
   on:
     repo: unumux/colonial-branding
     tags: true
