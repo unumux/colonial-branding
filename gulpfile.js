@@ -24,4 +24,4 @@ gulp.task('zip', ['sass', 'js'], function() {
 });
 
 
-gulp.task('build', ['zip']);
+gulp.task('build', ['zip']); 
