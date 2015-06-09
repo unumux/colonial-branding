@@ -1,0 +1,14 @@
+deploy:
+  provider: releases
+  api_key:
+    secure: TmKmi68v5Yd4OSIgHp/Go6Dl4IsUcyPRFMfIfT17D9CTSgp/yQ7wY7rAHY5SnENAm9pVzvC/8k59uuXtpga+IVA3590cj9L7vhx352kqdYE7TzEt5wY4OA6xHJ/bUDLpm9tB8nzTQl90OnXoZwb1z0vAj49aA47htBLnmWYfMeX1f/f9cXkAFabLOhBq9wSx0dbofX84oqe4X4ajQvr+jUXuZx8/aBqX97mKEUmA3vIzQXOlL5zLH4Wl0fafZifZkdiIGyTtNHbndPkRFaNTLIjwnEZSh6PvbdccPT5WKhWbTakKI0anNH7T8bnB+jWmWiJiIJLlE5gt9Scbn54JpiKwlSaLEa7MqG9rap8D9kCpdoja6soeTH8gyPdBxuRY2PJUY7VXlr+weTkGjmaZmpx/He2enjI+WNq2ufuCGIP/G00GVcZgsalkGgYHmUkmQW2u5tOOvlCKRpTgUC28o8pVTGCJDUeqGnz8bK7YLtueyFZIVynhcLZFkVLaz9VyWMtT8GsCbj0jUlE2DgqLSjnBjiHAt3KBb69O0TdgjvT8zJIJbu+oyrmyaGxSOATczLzqI77Aj0Wrn+a/PVWhZpkIn3FrEW5CizL0qJgJ2++nvB/9QuBcyXf4BQYvYbbaci8xpHWuyQPK4rMssusU8U1rf07BjoIxv8S8QxzQ5YI=
+  file:
+      - "releases/lite.css"
+      - "releases/main.css"
+      - "releases/bootstrap.min.js"
+  on:
+    repo: unumux/colonial-branding
+    tags: true
+  before_deploy:
+      - "npm install -g gulp"
+      - "gulp build"

@@ -12,7 +12,9 @@
     "test",
     "tests"
   ],
-  "main": "main.scss",
+  "main": [
+      "lib/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"
+  ],
   "homepage": "https://github.com/unumux/colonial-branding",
   "private": true
 }
