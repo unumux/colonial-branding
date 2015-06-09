@@ -3,6 +3,10 @@ node_js:
     - 0.10
 before_install:
     - "npm install -g gulp"
+script:
+    - "echo 'no script'"
+before_deploy:
+  - "gulp build"
 deploy:
   provider: releases
   api_key:
@@ -14,5 +18,3 @@ deploy:
   on:
     repo: unumux/colonial-branding
     tags: true
-  before_deploy:
-      - "gulp build"
