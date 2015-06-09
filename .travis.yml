@@ -1,8 +1,6 @@
 language: node_js
 node_js:
     - 0.10
-    - 0.11
-    - 0.12
 before_install:
     - "npm install -g gulp"
 deploy:
@@ -16,5 +14,5 @@ deploy:
   on:
     repo: unumux/colonial-branding
     tags: true
-  before_deploy:  
+  before_deploy:
       - "gulp build"
