@@ -1,0 +1,189 @@
+@mixin button-variant($color, $background) {
+  color: $color;
+  background-color: $background;
+  border-bottom: 3px solid darken($background, 15%);
+
+  &:focus {
+    color: $color;
+    background-color: darken($background, 15%);
+  }
+
+  &:hover,
+  &:active {
+    color: $color;
+    background-color: darken($background, 15%);
+  }
+
+  &:active {
+  	border-bottom:none;
+  	border-top: 3px solid darken($background, 20%);
+  	padding: .563em 1em .875em;
+  }
+
+  &:disabled {
+  	background: lighten($background, 10%);
+  	border:none;
+  }
+
+}
+
+@mixin button-outline-variant($color) {
+	background: transparent;
+	border: 2px solid $color;
+	color: $color;
+
+	cursor: pointer;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 1em;
+	font-weight:400;
+	margin: 0 0 1em;
+	padding: .75em 1em .75em;
+	transition: background 0.3s ease;
+
+	&:hover,
+	&:active {
+		background: $color;
+		color: $platinum;
+	}
+
+	&:active {
+  		border-top: 2px solid darken($color, 20%);
+  	}
+
+  	&:disabled {
+  		border-color: rgba($color, .75);
+  		color: rgba($color, .75)
+  	}
+
+}
+
+.btn {
+	border: none;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 1em;
+	font-weight:400;
+	margin: 0 0 1em;
+	padding: .75em 1em .688em;
+	cursor: pointer;
+	text-align: center;
+	transition: background 0.3s ease;
+}
+
+.btn-default {
+    @include button-variant($charcoal, $silver);
+}
+
+.btn-steel-blue {
+	@include button-variant($platinum, $steel-blue);
+}
+
+.btn-slate {
+	@include button-variant($platinum, $slate);
+}
+
+.btn-dark-red {
+	@include button-variant($platinum, $dark-red);
+}
+
+.btn-moss {
+	@include button-variant($platinum, $moss);
+}
+
+.btn-grape {
+	@include button-variant($platinum, $grape);
+}
+
+.btn-charcoal {
+	@include button-variant ($platinum, $charcoal);
+}
+
+.btn-outline-charcoal {
+	@include button-outline-variant($charcoal);
+}
+
+.btn-outline-steel-blue {
+	@include button-outline-variant($steel-blue);
+}
+
+.btn-outline-slate {
+	@include button-outline-variant($slate);
+}
+
+.btn-outline-dark-red {
+	@include button-outline-variant($dark-red);
+}
+
+.btn-outline-moss {
+	@include button-outline-variant($moss);
+}
+
+.btn-outline-grape {
+	@include button-outline-variant($grape);
+}
+
+.btn-outline-inverse {
+	@extend .btn;
+	background: transparent;
+	border: 2px solid $platinum;
+	color: $platinum;
+	padding: .688em 1em .688em;
+
+	&:hover, 
+	&:active {
+		background: $platinum;
+		color: $steel-blue;
+	}
+
+	&:disabled {
+		border-color: #97B1C1;
+		color: #97B1C1;
+	}
+
+}
+
+.btn-inverse {
+	@include button-variant($steel-blue, $platinum);
+}
+
+.btn-minimal {
+	background: none;
+	border:none;
+	color: $steel-blue;
+	cursor: pointer;
+	display: inline-block;
+	font-weight:400;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: .75em 1em;
+	transition: background 0.3s ease;
+
+	&:active,
+	&:hover {
+		color: $charcoal;
+	}
+
+	&:active {
+		background: $silver;
+	}
+	
+}
+
+.btn-large {
+	font-size: 1.2em;
+	padding: .813em 1.25em;
+
+	&:active {
+		padding: .650em 1.25em .975em;
+	}
+}
+
+.btn-small {
+	font-size: .875em;
+	padding: .5em .875em;
+
+	&:active {
+		padding: .313em .875em .688em;
+	}
+}

@@ -1,0 +1,157 @@
+.navbar {
+	background: $steel-blue;
+	height:50px;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+ 	width: 100%;
+ 	z-index: 100;
+
+ 	nav {
+ 	  position: fixed;
+	  background: #fff;
+	  box-shadow:  2px 10px 10px rgba(0,0,0,.5);
+	  top: 0;
+	  bottom:0;
+	  overflow-y: auto;
+	  transform: translate3D(calc(-70vw - 40px),0,0);
+	  transition: transform .5s ease-in;
+	  z-index: 1000;
+ 	}
+
+ 	.logo {
+ 		float:left;
+ 		margin: 5px 15px 0;
+ 	}
+
+ 	a {
+	  color: white;
+	  display: block;
+	  padding:15px 15px;
+	  text-decoration:none;
+	  transition: all .3s ease;
+	}
+
+ 	ul {
+	  background: #8393A2;
+	  list-style-type:none;
+	  margin:0;
+	  padding:0;
+	  width: 70vw;
+	  
+	  li {
+	    display:block;
+	    width:100%;
+	    
+	    &:last-child {
+	      a {
+	        border-bottom: none;
+	      }
+	    }
+	  }
+	  
+	  a {
+	    border-bottom:1px solid #555;
+	    
+	     &:hover {
+	      background: darken(#8393A2, 10%);
+	    }
+	  }
+	}
+
+	@media (min-width:48em) {
+		nav {
+			background: transparent;
+			box-shadow: none;
+			transform: translate3D(0,0,0);
+			position: relative;
+		}
+
+		ul {
+			background: transparent;
+			width: auto;
+
+			li {
+				width: auto;
+				display: inline-block;
+			}
+
+			a {
+				border: none;
+			}
+		}
+
+		
+	}
+}
+
+.menu-open {
+  overflow: hidden; 
+  
+  .navbar nav {
+   transform: translate3D(-10px, 0, 0);
+  }
+  
+  .overlay {
+    display:block;
+  }
+}
+
+.menu-return {
+  background: none;
+  border: none;
+  color: #235374;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  padding:15px 10px;
+  margin:0 0 0 10px;
+  width: auto;
+
+  @media (min-width:48em) {
+  	display:none;
+  }
+}
+
+.icon-bar {
+  background: #fff;
+  border-radius:5px;
+  display:block;
+  height: 3px;
+  width: 100%;
+  margin:5px 0;
+
+  &:last-of-type {
+  	margin-bottom: 3px;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  border:none;
+  color: #fff;
+  float:right;
+  font-size: .6em;
+  padding:7px 10px;
+  width:50px;
+
+  &:hover {
+  	background: darken($steel-blue, 10%);
+  }
+
+  @media (min-width:48em) {
+  	display:none;
+  }
+}
+
+.overlay {
+  display:none;
+  background: rgba(0, 0, 0, .5);
+  transition: all .3s ease;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 99;
+}

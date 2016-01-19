@@ -1,0 +1,44 @@
+body {
+	padding-top:50px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	color: $steel-blue;
+	font-size: 1.5em;
+}
+
+.colored-block {
+	background: $steel-blue;
+	padding: 0 20px;
+	margin:2em 0;
+
+	h3 {
+		color: $platinum;
+	}
+}
+
+.contain {
+	max-width:1200px;
+	padding:0 20px;
+	position: relative;
+	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+}
+
+section {
+	margin: 0 0 2em;
+
+	@media (min-width: 768px) {
+		padding:0 20px;
+		width: 50%;
+	}
+}
