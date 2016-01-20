@@ -187,3 +187,16 @@
 		padding: .313em .875em .688em;
 	}
 }
+
+.btn-square {
+	border-radius: none;
+}
+
+.btn-pill {
+	border-radius: 23px;
+
+	&.btn-large {
+		border-radius: 30px;
+	}
+}
+
