@@ -38,21 +38,21 @@
 	  margin:0;
 	  padding:0;
 	  width: 70vw;
-	  
+
 	  li {
 	    display:block;
 	    width:100%;
-	    
+
 	    &:last-child {
 	      a {
 	        border-bottom: none;
 	      }
 	    }
 	  }
-	  
+
 	  a {
 	    border-bottom:1px solid #555;
-	    
+
 	     &:hover {
 	      background: darken(#8393A2, 10%);
 	    }
@@ -81,17 +81,17 @@
 			}
 		}
 
-		
+
 	}
 }
 
 .menu-open {
-  overflow: hidden; 
-  
+  overflow: hidden;
+
   .navbar nav {
    transform: translate3D(-10px, 0, 0);
   }
-  
+
   .overlay {
     display:block;
   }
@@ -132,7 +132,7 @@
   color: #fff;
   float:right;
   font-size: .6em;
-  padding:7px 10px;
+  padding:4px 10px;
   width:50px;
 
   &:hover {
