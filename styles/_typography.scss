@@ -22,9 +22,9 @@ h2 {
 
 h3 {
 	font-family: $headings-font-family-alt;
-	font-size: 1.5625em;
+	font-size: 1.5em;
 	font-weight: 600;
-	line-height: 2em;
+	line-height: 1.5;
 	margin: 0 0 1em;
 }
 
@@ -32,8 +32,8 @@ h4 {
 	font-family: $headings-font-family-alt;
 	font-weight: 600;
 	font-size: 1em;
-	line-height: 1.5625;
-	margin: 0 0 1em;
+	line-height: 1.5;
+	margin: 0 0 .5em;
 }
 
 p + h3 {

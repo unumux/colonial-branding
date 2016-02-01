@@ -7,30 +7,35 @@ fieldset {
 }
 
 legend {
-	font-family:$headings-font-family;
-	font-size: 2em;
-	font-weight: 300;
-	color: $steel-blue;
-	margin:.5em 0;
+	font-family: $headings-font-family-alt;
+	font-size: 2.4375em;
+	font-weight: 400;
+	line-height: 1.218;
+	margin: 0;
 	padding: 0;
 }
 
 label {
+	font-weight: 600;
 	display: inline-block;
-	margin:2em 0 .8em;
+	margin:2em 0 0.5em;
 }
 
 ::-webkit-input-placeholder {
 	font-style: italic;
 }
 
-::-moz-placeholder { 
-   font-style: italic; 
+::-moz-placeholder {
+   font-style: italic;
    color: lighten($charcoal, 10%);
 }
 
-:-ms-input-placeholder {  
-   font-style: italic;  
+:-ms-input-placeholder {
+   font-style: italic;
+}
+
+input {
+		font-size: 1em;
 }
 
 input[type="text"],
@@ -38,7 +43,6 @@ input[type="email"],
 input[type="url"],
 input[type="tel"] {
 	border: 1px solid $charcoal;
-	font-size: 16px;
 	height: 44px;
 	padding:0 10px;
 	width:100%;
@@ -119,7 +123,7 @@ textarea {
 	border: 1px solid $charcoal;
 	background: transparent;
 	display: inline;
-	height: 44px;
+	height: 50px;
 	padding:0 10px;
 }
 
@@ -129,7 +133,3 @@ button[type="submit"].btn {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 }
-
-
-
-

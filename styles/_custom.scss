@@ -2,13 +2,8 @@ body {
 	padding-top:50px;
 }
 
-h2 {
-	font-size: 2em;
-}
-
 h3 {
-	color: $steel-blue;
-	font-size: 1.5em;
+	//color: $steel-blue;
 }
 
 .colored-block {
@@ -31,7 +26,7 @@ h3 {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+
 }
 
 section {
