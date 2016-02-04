@@ -1,6 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "@unumux/ui-framework": "^2.5.1"
+    "@unumux/stylelint-config-unumux": "^1.0.0",
+    "@unumux/ui-framework": "^2.5.1",
+    "stylelint": "^4.2.0"
   }
 }

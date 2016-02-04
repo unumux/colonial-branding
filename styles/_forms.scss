@@ -21,6 +21,10 @@ label {
 	margin:2em 0 0.5em;
 }
 
+label + input[type="radio"] {
+	margin-left: .5em;
+}
+
 ::-webkit-input-placeholder {
 	font-style: italic;
 }
@@ -55,6 +59,16 @@ input[type="tel"] {
 
 	&:disabled {
 		background: $silver;
+	}
+}
+
+.checkbox-list {
+	list-style-type: none;
+	margin-top: 2em;
+	padding: 0;
+
+	label {
+		margin: 0;
 	}
 }
 
@@ -132,4 +146,10 @@ button[type="submit"].btn {
 	margin-top: 1em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
+}
+
+.help-text {
+	color: lighten($charcoal, 15%);
+	font-style: italic;
+	margin: 0.5em 0 0;
 }

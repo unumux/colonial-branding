@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,200,400italic,600,600italic,700,900|Oswald:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/site.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -67,7 +67,8 @@
                           <li>Paragraphs should not exceed 45em (or 768px) in width. This keeps the line-height and font size within the readability
                             parameters</li>
                             <li>
-                              Should probably use ems for the font sizes.
+                              Use ems for font sizes. It scales better on mobile devices and helps better set the scale
+                              for margin and padding.
                             </li>
                             <li>Tooltip underline dotted doesnt' work in Safari.</li>
                         </ul>
@@ -78,6 +79,7 @@
             <div class="contain">
                 <section>
                     <h3>Buttons w/ Shadow</h3>
+                    <p>The button text should always be in uppercase.</p>
 
                     <button class="btn btn-default">READ MORE</button>
                     <button class="btn btn-steel-blue">READ MORE</button>
@@ -146,6 +148,8 @@
             <div class="contain">
                 <section>
                     <h2>Forms</h2>
+                    <p>Form labels should be more more than 50 characters in length. If your question requires additional
+                      character put it in the help text. </p>
                     <form>
                         <fieldset>
                             <legend>Basic Information</legend>
@@ -155,6 +159,7 @@
 
                             <label>Last Name</label>
                             <input type="text" placeholder="Enter your name here">
+                            <p class="help-text">You need to enter your first name here.</p>
 
                              <label>Last Name</label>
                             <input type="text" disabled="disabled" placeholder="Enter your name here">
@@ -171,6 +176,19 @@
 
                             <input id="female" type="radio" name="gender" value="female">
                             <label for="female">Female</label>
+
+                          <ul class="checkbox-list">
+                            <li>
+                              <label>
+                                <input type="checkbox"> Option 1
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox"> Option 2
+                              </label>
+                            </li>
+                          </ul>
 
                              <div class="upload-container">
                                 <label>Cover Letter</label>

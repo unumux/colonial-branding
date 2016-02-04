@@ -1,4 +1,6 @@
 .tooltip {
-	color: $ocean;
-	text-decoration-style: dotted;
+	border-bottom: 1px dotted $charcoal;
+	color: $charcoal;
+	cursor: help;
+	text-decoration: none;
 }

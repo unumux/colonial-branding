@@ -68,6 +68,7 @@
 	padding: .75em 1em .688em;
 	cursor: pointer;
 	text-align: center;
+  text-transform: uppercase;
 	transition: background 0.3s ease;
 }
 
@@ -130,7 +131,7 @@
 	color: $platinum;
 	padding: .688em 1em .688em;
 
-	&:hover, 
+	&:hover,
 	&:active {
 		background: $platinum;
 		color: $steel-blue;
@@ -167,7 +168,7 @@
 	&:active {
 		background: $silver;
 	}
-	
+
 }
 
 .btn-large {
@@ -199,4 +200,3 @@
 		border-radius: 30px;
 	}
 }
-
