@@ -70,7 +70,6 @@
                               Use ems for font sizes. It scales better on mobile devices and helps better set the scale
                               for margin and padding.
                             </li>
-                            <li>Tooltip underline dotted doesnt' work in Safari.</li>
                         </ul>
 
                 </section>
@@ -148,8 +147,25 @@
             <div class="contain">
                 <section>
                     <h2>Forms</h2>
-                    <p>Form labels should be more more than 50 characters in length. If your question requires additional
-                      character put it in the help text. </p>
+                    <ul>
+                      <li>Form labels should be more more than 50 characters in length. If your question requires additional
+                        character put it in the help text.
+                      </li>
+                      <li>
+                        Thou shall avoid placeholder text.
+                      </li>
+                      <li>
+                        Thou shall only label optional fields. Required fields will not have indication they are required.
+                      </li>
+                      <li>
+                        Validation should happen as the user tabs/clicks away from the field he/she were on.
+                      </li>
+                      <li>
+                        Thou shall use a suggested terms dropdown when more than 10 choices
+                      </li>
+
+        
+                    </ul>
                     <form>
                         <fieldset>
                             <legend>Basic Information</legend>
@@ -162,7 +178,7 @@
                             <p class="help-text">You need to enter your first name here.</p>
 
                              <label>Last Name</label>
-                            <input type="text" disabled="disabled" placeholder="Enter your name here">
+                            <input type="text" disabled="disabled">
 
                             <label>Select an Option</label>
                             <select>
