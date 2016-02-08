@@ -21,6 +21,13 @@ label {
 	margin:2em 0 0.5em;
 }
 
+.optional-label {
+	font-weight: 400;
+	font-size: .85em;
+	font-style: italic;
+	margin-left: .5em;
+}
+
 label + input[type="radio"] {
     margin-left: .5em;
 }
@@ -59,6 +66,7 @@ input[type="tel"] {
 
 	&:disabled {
 		background: $silver;
+		cursor: not-allowed;
 	}
 }
 

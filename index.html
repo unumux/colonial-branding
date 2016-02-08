@@ -40,7 +40,16 @@
             </header>
              <div class="contain">
                 <section>
-                    <h3>Typography</h3>
+                    <h2>Typography</h2>
+                    <h3>General Rules</h3>
+                    <ul>
+                      <li>Paragraphs should not exceed 45em (or 768px) in width. This keeps the line-height and font size within the readability
+                        parameters</li>
+                        <li>
+                          Use ems for font sizes. It scales better on mobile devices and helps better set the scale
+                          for margin and padding.
+                        </li>
+                    </ul>
                     <h1>Kitchen Gadgets super duper long</h1>
                     <h2>Doesn't matter!</h2>
                     <p>Ut tacimates corrumpit pro. Essent <a href="#" class="tooltip">intellegam</a> contentiones cu nec. Odio brute at pri,
@@ -62,7 +71,14 @@
                        nec ex malis veniam regione. Vix tation munere ex, ne pri justo legere mollis. Mel modus corrumpit te, nam tation labore
                         voluptua ad.</p>
 
-<h4>Heading 4</h4>
+                        <h4>Ordered List</h4>
+                        <ol>
+                          <li>Item one</li>
+                          <li>Item two</li>
+                          <li>Item three</li>
+                        </ol>
+
+                        <h4>Unordered List</h4>
                         <ul>
                           <li>Paragraphs should not exceed 45em (or 768px) in width. This keeps the line-height and font size within the readability
                             parameters</li>
@@ -75,75 +91,6 @@
                 </section>
 
             </div>
-            <div class="contain">
-                <section>
-                    <h3>Buttons w/ Shadow</h3>
-                    <p>The button text should always be in uppercase.</p>
-
-                    <button class="btn btn-default">READ MORE</button>
-                    <button class="btn btn-steel-blue">READ MORE</button>
-                    <button class="btn btn-slate">READ MORE</button>
-                    <button class="btn btn-dark-red">READ MORE</button>
-                    <button class="btn btn-moss">READ MORE</button>
-                    <button class="btn btn-grape">READ MORE</button>
-                    <button class="btn btn-charcoal">READ MORE</button>
-                     <button class="btn btn-charcoal btn-pill">READ MORE</button>
-                </section>
-
-                <section>
-                    <h3>Size Variation</h3>
-                    <button class="btn btn-default btn-large">READ MORE</button>
-                     <button class="btn btn-default btn-large btn-pill">READ MORE</button>
-                    <button class="btn btn-default">READ MORE</button>
-                    <button class="btn btn-small btn-default">READ MORE</button>
-                </section>
-
-                <section>
-                    <h3>Button Outline</h3>
-
-                    <button class="btn-outline-charcoal">READ MORE</button>
-                    <button class="btn-outline-steel-blue">READ MORE</button>
-                    <button class="btn-outline-slate">READ MORE</button>
-                    <button class="btn-outline-dark-red">READ MORE</button>
-                    <button class="btn-outline-moss">READ MORE</button>
-                    <button class="btn-outline-grape">READ MORE</button>
-                </section>
-
-                <section>
-                    <h3>Button Minimal</h3>
-                    <button class="btn-minimal">READ MORE</button>
-                </section>
-
-                <section class="colored-block">
-                    <h3>Button Inverse</h3>
-                    <button class="btn-outline-inverse">READ MORE</button>
-                    <button class="btn btn-inverse">READ MORE</button>
-                </section>
-            </div>
-
-            <div class="contain">
-                <section>
-                    <ul class="pagination">
-                        <li><a href="#">First</a></li>
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li class="active"><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                        <li><a href="#">Last</a></li>
-                    </ul>
-                    <p class="pagination-counter">Page 3 of 6</p>
-
-                    <ul class="breadcrumbs">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li class="active"><a href="#">Our Company</a></li>
-                    </ul>
-                </section>
-            </div>
-
             <div class="contain">
                 <section>
                     <h2>Forms</h2>
@@ -163,8 +110,6 @@
                       <li>
                         Thou shall use a suggested terms dropdown when more than 10 choices. Semantic UI possibly(?)
                       </li>
-
-
                     </ul>
                     <form>
                         <fieldset>
@@ -175,12 +120,12 @@
 
                             <label>Last Name</label>
                             <input type="text" placeholder="Enter your name here">
-                            <p class="help-text">You need to enter your first name here.</p>
+                            <p class="help-text">You need to enter your last name here.</p>
 
                              <label>Last Name</label>
                             <input type="text" disabled="disabled">
 
-                            <label>Select an Option</label>
+                            <label>Select an Option <span class="optional-label">(optional)</span></label>
                             <select>
                                 <option>Option 1</option>e
                                 <option>Option 2</option>
@@ -227,6 +172,93 @@
                             <button type="submit" class="btn btn-moss">Submit</button>
                         </fieldset>
                     </form>
+                </section>
+            </div>
+
+
+            <div class="contain">
+              <section>
+                <h2>Tables</h2>
+                <p>Coming soon...</p>
+              </section>
+            </div>
+            <div class="contain">
+                <section>
+
+                  <h2>Pagination</h2>
+                    <ul class="pagination">
+                        <li><a href="#">First</a></li>
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                        <li><a href="#">Last</a></li>
+                    </ul>
+                    <p class="pagination-counter">Page 3 of 6</p>
+
+                    <h2>Breadcrumbs</h2>
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class=13"active"><a href="#">Our Company</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="contain">
+              <section>
+                <h2>Alerts, Error Messages</h2>
+                <p>page alert, inline alert, and a modal alert</p>
+              </section>
+            </div>
+
+            <div class="contain">
+                <section>
+                    <h2>Buttons</h2>
+                    <p>The button text should always be in uppercase.</p>
+                    <h3>Buttons w/ Shadow</h3>
+
+                    <button class="btn btn-default">READ MORE</button>
+                    <button class="btn btn-steel-blue">READ MORE</button>
+                    <button class="btn btn-slate">READ MORE</button>
+                    <button class="btn btn-dark-red">READ MORE</button>
+                    <button class="btn btn-moss">READ MORE</button>
+                    <button class="btn btn-grape">READ MORE</button>
+                    <button class="btn btn-charcoal">READ MORE</button>
+                     <button class="btn btn-charcoal btn-pill">READ MORE</button>
+                </section>
+
+                <section>
+                    <h3>Size Variation</h3>
+                    <button class="btn btn-default btn-large">READ MORE</button>
+                     <button class="btn btn-default btn-large btn-pill">READ MORE</button>
+                    <button class="btn btn-default">READ MORE</button>
+                    <button class="btn btn-small btn-default">READ MORE</button>
+                </section>
+
+                <section>
+                    <h3>Button Outline</h3>
+
+                    <button class="btn-outline-charcoal">READ MORE</button>
+                    <button class="btn-outline-steel-blue">READ MORE</button>
+                    <button class="btn-outline-slate">READ MORE</button>
+                    <button class="btn-outline-dark-red">READ MORE</button>
+                    <button class="btn-outline-moss">READ MORE</button>
+                    <button class="btn-outline-grape">READ MORE</button>
+                </section>
+
+                <section>
+                    <h3>Button Minimal</h3>
+                    <button class="btn-minimal">READ MORE</button>
+                </section>
+
+                <section class="colored-block">
+                    <h3>Button Inverse</h3>
+                    <button class="btn-outline-inverse">READ MORE</button>
+                    <button class="btn btn-inverse">READ MORE</button>
                 </section>
             </div>
 
