@@ -3,6 +3,10 @@ body {
 	font-family: $base-font-family;
 	font-weight:400;
 	line-height: 1.5625;
+
+	@media (min-width:45em) {
+		line-height: 1.6;
+	}
 }
 
 h1 {
@@ -44,12 +48,8 @@ p + h3 {
 	margin-top: 1em;
 }
 
-p {
+p, ul, ol {
 	margin: 0 0 1.5625em;
-
-	@media (min-width:45em) {
-		line-height: 1.6;
-	}
 }
 
 small {
@@ -66,4 +66,49 @@ a {
 
 li {
 	margin: 0 0 .5em;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin-bottom: .5em;
+}
+
+dd + dt {
+	margin-top: 1.5625em;
+}
+
+blockquote {
+
+
+	p {
+		display: inline-block;
+		margin: 0 0 1em;
+
+		&:before {
+			content: open-quote;
+			display: inline-block;
+			font-size: 1.4em;
+		}
+
+		&:after {
+			content: close-quote;
+			display: inline-block;
+			font-size: 1.4em;
+		}
+	}
+
+	footer {
+      color: lighten($charcoal, 15%);
+			display: block;
+			margin-left: .5em;
+
+			&:before {
+				content: "— ";
+				display: inline-block;
+			}
+
+	}
 }
